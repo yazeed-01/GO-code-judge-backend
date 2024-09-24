@@ -1,0 +1,88 @@
+
+signup:
+http://localhost:8080/signup
+POST
+{
+    "Username": "yazeed",
+    "Email": "e@gm.com",
+    "Password": "q1234567"
+}
+
+
+// -----------------------------------------------------------------
+
+
+login:
+http://localhost:8080/login
+POST
+{
+    "Email": "e@gm.com",
+    "Password": "q1234567"
+}
+
+// -----------------------------------------------------------------
+
+refresh-token:
+http://localhost:8080/refresh-token
+POST
+key: Authorization
+
+// -----------------------------------------------------------------
+RETURN users:
+http://localhost:8080/users
+GET
+
+// -----------------------------------------------------------------
+
+
+// -----------------------------------------------------------------
+
+
+
+
+
+
+{
+    "language_id": 54,
+    "source_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int input;\n    cin >> input;      cout << 2 + input;     return 0;\n}"
+}
+
+
+
+
+{
+    "ProblemName": "A + B Problem2",
+    "ProblemDescription": "You are given two integers A and B. Your task is to compute the sum of A and B.",
+    "Defficulty": "Easy",
+    "Tags": "math, basic",
+    "ContestID": 1,  
+    "InputExample": "1 2",
+    "OutputExample": "3",
+    "TestCaseInput": "1 2",
+    "TestCaseOutput": "3"
+}
+
+
+
+
+SHOW USER
+http://localhost:8080/user/0 
+work on user_id
+-------------------------------------------------------------------
+SHOW CONTEST
+http://localhost:8080/contest/0
+work on contest_id
+-------------------------------------------------------------------
+SHOW PROBLEM
+http://localhost:8080/contest/0/problem/1
+problem work on id 
+--------------------------------------------------------------------
+TO SUBMIT
+http://localhost:8080/contest/1/problem/0/submit/1
+contest on id  ||| problem on problem_id  |||  user on id
+--------------------------------------------------------------------
+TO SHOW SUBMISSION
+http://localhost:8080/contest/1/problem/0/submission/1
+contest on id  ||| problem on problem_id  |||  submission on id
+--------------------------------------------------------------------
+
